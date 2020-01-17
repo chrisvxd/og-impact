@@ -1,0 +1,38 @@
+{
+  "name": "puppeteer-og-image-hosted",
+  "version": "0.0.1",
+  "description": "An HTTP API for creating dynamic social share images using HTML + CSS. [`puppeteer-social-image`](https://github.com/chrisvxd/puppeteer-social-image) as a service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "saasify debug",
+    "deploy": "saasify deploy",
+    "dev": "saasify dev",
+    "toc": "markdown-toc -i readme.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisvxd/awesome-social-share.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisvxd/awesome-social-share/issues"
+  },
+  "homepage": "https://github.com/chrisvxd/awesome-social-share#readme",
+  "dependencies": {
+    "firebase-admin": "^8.9.1",
+    "fts-core": "^1.1.0",
+    "puppeteer-social-image-lambda": "^0.5.0",
+    "s3": "^4.4.0",
+    "shortid": "^2.2.15",
+    "temp-write": "^4.0.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0",
+    "@types/puppeteer-core": "^1.9.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}

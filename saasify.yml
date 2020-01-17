@@ -1,0 +1,75 @@
+name: og-impact
+services:
+  - src: src/image.ts
+    immutable: true
+    POST: false
+    examples:
+      - name: Request image from basic template (free)
+        input:
+          template: basic
+          title: Hello, World!
+          backgroundImageUrl: https://images.unsplash.com/photo-1475359524104-d101d02a042b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2057&q=80
+        output: social.jpg
+      - name: Request image from user template
+        input:
+          template: my-template
+          name: George Michael
+        output: social.jpg
+  - src: src/register.ts
+    GET: false
+    examples:
+      - name: Register a user template
+        input:
+          body: <div class="Main">Hello, {{name}}!</div>
+          styles: '.Main { color: blue; }'
+  - src: src/generate.ts
+    GET: false
+    examples:
+      - name: Generate image from HTML and save to S3
+        input:
+          body: <div class="Main">Hello, {{name}}!</div>
+          styles: '.Main { color: blue; }'
+          name: George Michael
+      - name: Generate image from a template and save to S3
+        input:
+          template: basic
+          title: Hello, World!
+          backgroundImageUrl: https://images.unsplash.com/photo-1475359524104-d101d02a042b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2057&q=80
+saas:
+  name: OG IMPACT
+  heading: "**Dynamic branded social images,\nbuilt for devs.**"
+  subheading: Stop wasting time creating 1,000s of custom social share images. Render them via an API. Boost your social engagement.
+  repo: https://github.com/chrisvxd/puppeteer-social-image
+  logo: './media/logo.svg'
+  favicon: './media/favicon.ico'
+  theme:
+    name: waves
+    backgroundImage: https://images.unsplash.com/photo-1523251451807-aaf1c84d0591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+    wave: false
+    codeBlockDark: true
+    codeBlockOutputFlush: true
+    gradientDark: true
+    buttonStyle: rounded
+  features:
+    - name: Boost social engagement
+      desc: Adding social share images can boost CTR of social links by [up to 250%](https://blogging.com/increase-blog-traffic/), as well as increasing social engagement.
+      icon: media/icons/share.svg
+    - name: Dynamic, branded images
+      desc: Create a branded template using HTML and CSS, and we'll dynamically render images for each page.
+      icon: media/icons/brand.svg
+    - name: Built for devs
+      desc: Generating a dynamic image is as simple as placing a `<meta />` tag in your HTML.
+      icon: media/icons/dev.svg
+    - name: Use a free template
+      desc: Don't need a branded template? Explore our collection of beautiful, free templates that cover many use cases.
+      icon: media/icons/gallery.svg
+    - name: Blazingly fast
+      desc: Images are cached after the first generation, so our servers won't even sweat it if you go viral.
+      icon: media/icons/speed.svg
+    - name: Built on open source
+      desc: Built on top of [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image), the Node.js library for generating social share images.
+      icon: media/icons/oss.svg
+env:
+  S3_ACCESS_KEY_ID: '@s3-access-key-id'
+  S3_SECRET_ACCESS_KEY: '@s3-secret-access-key'
+  FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
