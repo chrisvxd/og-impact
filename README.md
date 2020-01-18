@@ -55,14 +55,14 @@ When your page gets shared, the social platform will read the meta tag and prese
 
 This example will render in Facebook and others. For Twitter, add `<meta property="twitter:image" />`. For a full list, see [this reference]().
 
-Now let's add a big more sex appeal to this by adding a background image via the `basic` template's `unsplash` param, which takes an [Unsplash](https://unsplash.com/) image ID:
+Now let's add a big more sex appeal to this by adding a background image via the `basic` template's `unsplashId` param, which takes an [Unsplash](https://unsplash.com/) image ID:
 
 ```html
 <meta
   property="og:image"
   content="https://ssfy.sh/chrisvxd/og-impact@e8cd1a94/image?
     title=Hello%20World&
-    unsplash=WLUHO9A_xik"
+    unsplashId=WLUHO9A_xik"
 />
 ```
 
@@ -161,7 +161,7 @@ Now we can render our template using the `/image` URL as before
 ##### Params
 
 - `title` _string_ - text to render
-- `unsplash` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
+- `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
 
@@ -172,7 +172,7 @@ Now we can render our template using the `/image` URL as before
   property="og:image"
   content="https://ssfy.sh/chrisvxd/og-impact@e8cd1a94/image?
     title=Hello%20World&
-    unsplash=WLUHO9A_xik"
+    unsplashId=WLUHO9A_xik"
 />
 ```
 
