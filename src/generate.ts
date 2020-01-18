@@ -1,7 +1,10 @@
-import renderSocialImage = require('puppeteer-social-image-lambda');
+import puppeteer from 'puppeteer-serverless';
+import renderSocialImage = require('puppeteer-social-image');
 import { upload } from './utils/s3-helpers';
 import { s3Client } from './config';
 import reducePairs from './utils/reduce-pairs';
+
+let browser;
 
 /**
  * Generate an image with an existing or custom template and save to S3. All remaining params get passed to the handlebars template.
@@ -20,12 +23,15 @@ export default async function generate(
   size?: 'facebook' | 'twitter',
   ...templateParamsArr
 ): Promise<{ url: string }> {
+  browser = browser || (await puppeteer.launch({}));
+
   const image = await renderSocialImage({
     template,
     templateBody: body,
     templateStyles: styles,
     size: size || 'facebook',
-    templateParams: reducePairs(templateParamsArr)
+    templateParams: reducePairs(templateParamsArr),
+    browser
   });
 
   return {

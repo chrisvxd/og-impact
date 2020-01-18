@@ -1,10 +1,13 @@
 import { HttpResponse } from 'fts-core';
-import renderSocialImage from 'puppeteer-social-image-lambda';
+import puppeteer from 'puppeteer-serverless';
+import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
 import { db } from './config';
 
-const prebuiltTemplates = ['basic'];
+const prebuiltTemplates = ['article', 'basic'];
 const customTemplates = {};
+
+let browser;
 
 /**
  * Render a social share image from a template. All remaining params get passed to the handlebars template.
@@ -19,6 +22,8 @@ export default async function image(
   size?: 'facebook' | 'twitter',
   ...templateParamsArr: any[]
 ): Promise<HttpResponse> {
+  browser = browser || (await puppeteer.launch({}));
+
   const templateParams = reducePairs(templateParamsArr);
 
   // Load template from DB if it's not already in cache
@@ -40,7 +45,8 @@ export default async function image(
     template,
     templateParams,
     customTemplates,
-    size
+    size,
+    browser
   });
 
   return {
