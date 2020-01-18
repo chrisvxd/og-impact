@@ -1,16 +1,13 @@
-<img src="https://i.imgur.com/ammCmgh.png" />
-
-<h2 align="center">Dynamic social images</h2>
+<p align="center">
+<img src="https://i.imgur.com/6Xi6tPt.png" width=800 />
+</p>
+<h1 align="center">OG IMPACT</h1>
 
 <p align="center">Dynamic social share images for Facebook, Twitter, Slack etc in a single line of HTML</p>
 
 ```html
 <meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
 ```
-
-<p align="center">
-<img src="https://i.imgur.com/6Xi6tPt.png" width=800 />
-</p>
 
 <p align="center">
   <a href="https://og-impact.saasify.sh">
