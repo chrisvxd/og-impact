@@ -9,7 +9,7 @@
 ```
 
 <p align="center">
-<img src="https://ssfy.sh/chrisvxd/og-impact@e8cd1a94/image?title=Hello%20World&backgroundImageUrl=https://source.unsplash.com/WLUHO9A_xik" width=500 />
+<img src="https://i.imgur.com/6Xi6tPt.png" width=800 />
 </p>
 
 <p align="center">
