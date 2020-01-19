@@ -10,7 +10,7 @@
 ```
 
 <p align="center">
-  <a href="https://og-impact.saasify.sh">
+  <a href="https://chrisvxd_og-impact.saasify.sh">
     https://ogimpact.sh
   </a>
 </p>
