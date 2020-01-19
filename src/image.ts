@@ -26,11 +26,10 @@ export default async function image(
 
   const templateParams = reducePairs(templateParamsArr);
 
+  const isPrebuiltTemplate = prebuiltTemplates.indexOf(template) !== -1;
+
   // Load template from DB if it's not already in cache
-  if (
-    prebuiltTemplates.indexOf(template) === -1 &&
-    typeof customTemplates[template] === 'undefined'
-  ) {
+  if (!isPrebuiltTemplate && typeof customTemplates[template] === 'undefined') {
     const snapshot = await db
       .collection('templates')
       .doc(template)
@@ -41,9 +40,23 @@ export default async function image(
     customTemplates[template] = { body, styles };
   }
 
+  const definedImage =
+    templateParams.unsplashId ||
+    templateParams.unsplashKeywords ||
+    templateParams.imageUrl;
+
+  const templateParamsWithConfig = isPrebuiltTemplate
+    ? {
+        unsplashId: definedImage ? null : 'OeC1wIsKNpk',
+        ...templateParams,
+        watermark: null,
+        watermarkUrl: 'ogimpact.sh'
+      }
+    : templateParams;
+
   const body = await renderSocialImage({
     template,
-    templateParams,
+    templateParams: templateParamsWithConfig,
     customTemplates,
     size,
     browser

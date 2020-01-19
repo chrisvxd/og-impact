@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer-serverless';
-import renderSocialImage = require('puppeteer-social-image');
+import renderSocialImage from 'puppeteer-social-image';
 import { upload } from './utils/s3-helpers';
 import { s3Client } from './config';
 import reducePairs from './utils/reduce-pairs';
