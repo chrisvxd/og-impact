@@ -1351,10 +1351,10 @@ puppeteer-serverless@^1.0.0:
     chrome-aws-lambda "^2.0.2"
     puppeteer-core "^2.0.0"
 
-puppeteer-social-image@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/puppeteer-social-image/-/puppeteer-social-image-0.3.1.tgz#5a56c20bbe59fc744a39e1d728deb9688d33f86c"
-  integrity sha512-OujWIUlrCKP6UqkG/8CAkxoa4LzuCgR9Sb42n/2k4DW9VdC2QoYSpTF7Y4OCHTEpnrOWOccHbxAP7dDolTmitQ==
+puppeteer-social-image@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/puppeteer-social-image/-/puppeteer-social-image-0.3.2.tgz#d22698b6f38d7b6767e2ec56bf13be57c6a0ebf2"
+  integrity sha512-RmIztFJtcaFXHkviCy8AgnSBVWpTLAM869gjd3hQjfRE4KiF7ZID4yqVWQ4+0TmLnQ0Eict6WlmfRG27APf5ag==
   dependencies:
     "@babel/polyfill" "^7.4.4"
     handlebars "^4.1.2"
