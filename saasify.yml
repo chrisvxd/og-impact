@@ -81,3 +81,7 @@ env:
   S3_ACCESS_KEY_ID: '@s3-access-key-id'
   S3_SECRET_ACCESS_KEY: '@s3-secret-access-key'
   FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
+noAuthRateLimit:
+  requests: true
+  requestsInterval: 3600
+  requestsMaxPerInterval: 100000
