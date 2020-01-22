@@ -22,6 +22,14 @@ services:
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'
+  - src: src/preview.ts
+    immutable: true
+    GET: false
+    examples:
+      - name: Preview a user template
+        input:
+          body: <div class="Main">Hello, {{name}}!</div>
+          styles: '.Main { color: blue; }'
   - src: src/generate.ts
     GET: false
     examples:
