@@ -9,6 +9,8 @@
 <meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
 ```
 
+<p align="center"><a href="#free-templates">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpacteditor.netlify.com">Template Editor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://chrisvxd_og-impact.saasify.sh/pricing">Pricing</a></p>
+
 ## Quick Start
 
 ### Create your first image
@@ -59,72 +61,13 @@ Let's try another template called `article`, designed for (but not limited to) s
 
 Neat, huh? Check out the [template gallery](#free-templates) to explore our beautiful, free templates covering various use cases.
 
-### Create your own image template
+### Create your own image template ([Pro feature](https://og-impact.saasify.sh/pricing))
 
-> This is a pro feature, so you'll need to [upgrade](https://og-impact.saasify.sh/pricing) to access it.
+Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://chrisvxd_og-impact.saasify.sh/docs#operation/registerPOST) to register custom templates if that's more your thing.
 
-Our templates run on HTML and CSS, so creating your own one as simple as:
+> **IMPORTANT: Your template will be public, so it's important to watermark the template with your brand or URL**.
 
-1. Build your template in HTML and CSS
-2. Register your template
-
-#### Build your template
-
-You can use any HTML/CSS editor you want, but [here's a CodePen](https://codepen.io/chrisvxd/pen/jOEvGWV?editors=1100) that can be used to build new templates. Let's start with a really simple template. Here's the HTML:
-
-```html
-<div class="social">
-  <h1>{{title}}</h1>
-
-  <!-- Include a branded watermark as templates are public -->
-  <h2>example.com</h2>
-</div>
-```
-
-In reality, this is a [handlebars template](https://handlebarsjs.com/guide/#what-is-handlebars). `{{title}}` will be replaced by the query param `?title` when rendering the image.
-
-Now for the CSS:
-
-```css
-.social {
-  align-items: center;
-  display: flex;
-  background: lightgray;
-  flex-direction: column;
-  font-size: 2rem;
-  height: 100%;
-  justify-content: center;
-  font-family: sans-serif;
-}
-```
-
-> If you want to use template params in CSS, it's recommended to use a `style` tag in your HTML.
-
-#### Register your template
-
-Registering the template can be done via the `/register` API. This is most easily done using cURL from the command line. We're working on a UI to simplify this for the future.
-
-First, minify your HTML and CSS - then post via the CLI:
-
-```bash
-curl -X POST \
-  'https://ssfy.sh/chrisvxd/og-impact/register' \
-  -H 'content-type: application/json' \
-  -d '{
-  "body": "<div class=\"social\"><h1>{{title}}</h1><h2>example.com</h2></div>",
-  "styles": ".social{align-items:center;display:flex;background:#d3d3d3;flex-direction:column;font-size:2rem;height:100%;justify-content:center;font-family:sans-serif}"
-}'
-```
-
-Response
-
-```json
-{
-  "template": "M6Hdtamy"
-}
-```
-
-Now we can render our template using the `/image` URL as before
+Using your template:
 
 ```html
 <meta
@@ -135,9 +78,7 @@ Now we can render our template using the `/image` URL as before
 />
 ```
 
-<img style="border-radius: 8px; margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact@5989f6b4/image?template=M6Hdtamy&title=Hello%20World" width=400 />
-
-> **This URL will be public, so it's important to watermark the template with your brand or URL**.
+<img style="border-radius: 8px; margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/image?template=M6Hdtamy&title=Hello%20World" width=400 />
 
 ### Free Templates
 
