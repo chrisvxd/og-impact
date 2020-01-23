@@ -45,8 +45,8 @@ services:
           imageUrl: https://images.unsplash.com/photo-1475359524104-d101d02a042b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2057&q=80
 saas:
   name: OG IMPACT
-  heading: "**Dynamic branded social images,\nbuilt for devs.**"
-  subheading: Stop wasting time creating 1,000s of custom social share images. Render them via an API. Boost your social engagement.
+  heading: '**Dynamic, branded social images in a single line of HTML**' # Dynamic, branded social images,     one line of HTML.
+  subheading: Render dynamic social share images whenever your pages get shared to Facebook, Twitter, Slack & more.
   repo: https://github.com/chrisvxd/puppeteer-social-image
   logo: './media/logo.svg'
   favicon: './media/favicon.ico'
