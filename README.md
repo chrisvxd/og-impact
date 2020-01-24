@@ -3,13 +3,14 @@
 </p>
 <h1 align="center"> <a href="https://chrisvxd_og-impact.saasify.sh">ogimpact.sh</a></h1>
 
+
+<p align="center"><a href="#free-templates">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpacteditor.netlify.com">Template Editor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://chrisvxd_og-impact.saasify.sh/pricing">Pricing</a></p>
+
 <p align="center">Dynamic social share images for Facebook, Twitter, Slack etc in a single line of HTML</p>
 
 ```html
 <meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
 ```
-
-<p align="center"><a href="#free-templates">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpacteditor.netlify.com">Template Editor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://chrisvxd_og-impact.saasify.sh/pricing">Pricing</a></p>
 
 ## Quick Start
 
