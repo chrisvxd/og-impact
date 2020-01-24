@@ -10,6 +10,10 @@ services:
           title: Hello, World!
           imageUrl: https://images.unsplash.com/photo-1475359524104-d101d02a042b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2057&q=80
         output: social.jpg
+        snippet:
+          label: HTML
+          language: html
+          code: <meta content="https://og.ish?title=Hello%20World" property="og:image" />
       - name: Request image from user template
         input:
           template: my-template
