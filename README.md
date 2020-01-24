@@ -61,11 +61,13 @@ Let's try another template called `article`, designed for (but not limited to) s
 
 Neat, huh? Check out the [template gallery](#free-templates) to explore our beautiful, free templates covering various use cases.
 
-### Create your own image template ([Pro feature](https://og-impact.saasify.sh/pricing))
+### Create your own image template
+
+> This is a [pro feature](https://og-impact.saasify.sh/pricing).
 
 Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://chrisvxd_og-impact.saasify.sh/docs#operation/registerPOST) to register custom templates if that's more your thing.
 
-> **IMPORTANT: Your template will be public, so it's important to watermark the template with your brand or URL**.
+**IMPORTANT: Your template will be public, so it's important to watermark the template with your brand or URL**.
 
 Using your template:
 
