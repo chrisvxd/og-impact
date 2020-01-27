@@ -158,11 +158,9 @@ Using your template:
 <meta
   property="og:image"
   content="https://ssfy.sh/chrisvxd/og-impact/image?
-           template=article&
-           eyebrow=27%20AUGUST&
-           title=INTO%20THE%20OCEAN&
-           subtitle=Explore%20the%20depths%20of%20the%20deep%20blue%20sea&
-           unsplashId=gGX1fJkmw3k"
+           template=fiftyfifty&
+           title=INTO%20THE%20MOUNTAINS&
+           subtitle=Explore%20the%20depths%20of%20the%20deep%20blue%20sky"
 />
 ```
 
