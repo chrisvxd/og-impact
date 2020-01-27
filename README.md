@@ -96,6 +96,7 @@ Using your template:
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
+- `googleFont` _string_ - Google Font to render
 
 ##### Snippet
 
@@ -122,6 +123,7 @@ Using your template:
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
+- `googleFont` _string_ - Google Font to render
 
 ##### Snippet
 
@@ -151,6 +153,7 @@ Using your template:
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
+- `googleFont` _string_ - Google Font to render
 
 ##### Snippet
 
