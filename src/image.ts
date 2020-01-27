@@ -4,7 +4,7 @@ import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
 import { db } from './config';
 
-const prebuiltTemplates = ['article', 'basic'];
+const prebuiltTemplates = ['article', 'basic', 'fiftyfifty'];
 const customTemplates = {};
 
 let browser;
