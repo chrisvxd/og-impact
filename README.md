@@ -75,12 +75,12 @@ Using your template:
 <meta
   property="og:image"
   content="https://ssfy.sh/chrisvxd/og-impact/image?
-    template=M6Hdtamy&
-    title=Hello%20World"
+    template=infGC5AQ&
+    title=MIND%20BLOWN"
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?template=M6Hdtamy&title=Hello%20World&ghbust=1" width=400 />
+<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?template=infGC5AQ&title=MIND%20BLOWN&ghbust=1" width=400 />
 
 ### Free Templates
 
