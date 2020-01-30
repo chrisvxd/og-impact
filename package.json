@@ -23,7 +23,7 @@
     "firebase-admin": "^8.9.1",
     "fts-core": "^1.1.0",
     "puppeteer-serverless": "^1.0.0",
-    "puppeteer-social-image": "0.5.0",
+    "puppeteer-social-image": "0.5.1",
     "s3": "^4.4.0",
     "shortid": "^2.2.15",
     "temp-write": "^4.0.0",
