@@ -2,10 +2,8 @@ import { HttpResponse } from 'fts-core';
 import puppeteer from 'puppeteer-serverless';
 import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
-import { db } from './config';
-
-const prebuiltTemplates = ['article', 'basic', 'fiftyfifty'];
-const customTemplates = {};
+import getCustomTemplates from './utils/get-custom-templates';
+import configureParams from './utils/configure-params';
 
 let browser;
 
@@ -26,33 +24,14 @@ export default async function image(
 
   const templateParams = reducePairs(templateParamsArr);
 
-  const isPrebuiltTemplate = prebuiltTemplates.indexOf(template) !== -1;
+  const { customTemplates, isPrebuiltTemplate } = await getCustomTemplates(
+    template
+  );
 
-  // Load template from DB if it's not already in cache
-  if (!isPrebuiltTemplate && typeof customTemplates[template] === 'undefined') {
-    const snapshot = await db
-      .collection('templates')
-      .doc(template)
-      .get();
-
-    const { body, styles } = snapshot.data();
-
-    customTemplates[template] = { body, styles };
-  }
-
-  const definedImage =
-    templateParams.unsplashId ||
-    templateParams.unsplashKeywords ||
-    templateParams.imageUrl;
-
-  const templateParamsWithConfig = isPrebuiltTemplate
-    ? {
-        unsplashId: definedImage ? null : 'OeC1wIsKNpk',
-        ...templateParams,
-        watermark: null,
-        watermarkUrl: 'ogimpact.sh'
-      }
-    : templateParams;
+  const templateParamsWithConfig = configureParams(
+    templateParams,
+    isPrebuiltTemplate
+  );
 
   const body = await renderSocialImage({
     template,

@@ -28,7 +28,6 @@ services:
           styles: '.Main { color: blue; }'
   - src: src/preview.ts
     immutable: true
-    GET: false
     examples:
       - name: Preview a user template
         input:

@@ -2,6 +2,8 @@ import { HttpResponse } from 'fts-core';
 import puppeteer from 'puppeteer-serverless';
 import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
+import getCustomTemplates from './utils/get-custom-templates';
+import configureParams from './utils/configure-params';
 
 let browser;
 
@@ -15,8 +17,9 @@ let browser;
  *
  */
 export default async function preview(
-  body: string,
-  styles: string,
+  template: string = 'basic',
+  body?: string,
+  styles?: string,
   size?: 'facebook' | 'twitter',
 
   ...templateParamsArr: any[]
@@ -25,15 +28,31 @@ export default async function preview(
 
   const templateParams = reducePairs(templateParamsArr);
 
-  // TODO watermark preview image (or render inside "Twitter" share frame preview)
-  const img = await renderSocialImage({
-    templateBody: body,
-    templateStyles: styles,
+  const options: any = {
     templateParams,
     size,
     browser,
     preview: true
-  });
+  };
+
+  if (body) {
+    options.templateBody = body;
+    options.templateStyles = styles;
+  } else {
+    options.template = template;
+
+    const { customTemplates, isPrebuiltTemplate } = await getCustomTemplates(
+      template
+    );
+
+    options.customTemplates = customTemplates;
+    options.templateParams = configureParams(
+      templateParams,
+      isPrebuiltTemplate
+    );
+  }
+
+  const img = await renderSocialImage(options);
 
   return {
     headers: {
