@@ -31,7 +31,8 @@ export default async function preview(
     templateStyles: styles,
     templateParams,
     size,
-    browser
+    browser,
+    preview: true
   });
 
   return {
