@@ -11,8 +11,7 @@ let browser;
  * Render an image from a template. Remaining params are passed to the handlebars template.
  *
  * @param template - Either a [free](/docs#section/Quick-Start/Free-Templates) or [user template](/docs#section/Quick-Start/Create-your-own-image-template) ID
- * @param body - Handlebars template to render in the body. If used, `template` will be ignored.
- * @param styles - CSS to use for a custom template. Use with `body`.
+ * @param size - Size of the image to render
  *
  * @return Image as `image/png`
  */
