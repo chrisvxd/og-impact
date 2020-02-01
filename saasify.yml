@@ -3,6 +3,13 @@ services:
   - src: src/image.ts
     immutable: true
     POST: false
+    pricingPlanConfig:
+      free:
+        enabled: true
+      starter:
+        enabled: true
+      pro:
+        enabled: true
     examples:
       - name: Request image from basic template (free)
         input:
@@ -21,6 +28,13 @@ services:
         output: social.jpg
   - src: src/register.ts
     GET: false
+    pricingPlanConfig:
+      free:
+        enabled: false
+      starter:
+        enabled: false
+      pro:
+        enabled: true
     examples:
       - name: Register a user template
         input:
@@ -28,6 +42,13 @@ services:
           styles: '.Main { color: blue; }'
   - src: src/preview.ts
     immutable: true
+    pricingPlanConfig:
+      free:
+        enabled: true
+      starter:
+        enabled: true
+      pro:
+        enabled: true
     examples:
       - name: Preview a user template
         input:
@@ -35,6 +56,13 @@ services:
           styles: '.Main { color: blue; }'
   - src: src/generate.ts
     GET: false
+    pricingPlanConfig:
+      free:
+        enabled: false
+      starter:
+        enabled: true
+      pro:
+        enabled: true
     examples:
       - name: Generate image from HTML and save to S3
         input:
@@ -84,7 +112,34 @@ env:
   S3_ACCESS_KEY_ID: '@s3-access-key-id'
   S3_SECRET_ACCESS_KEY: '@s3-secret-access-key'
   FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
-noAuthRateLimit:
-  requests: true
-  requestsInterval: 3600
-  requestsMaxPerInterval: 100000
+pricingPlans:
+  - name: Free
+    slug: free
+    amount: 0
+    rateLimit: null
+    features:
+      - Integrate in 1 line of HTML
+      - Unlimited images
+      - Free template gallery
+      - Images watermarked
+      - ~~Custom templates with HTML/CSS~~
+  - name: Starter
+    slug: starter
+    amount: 999
+    rateLimit: null
+    features:
+      - Integrate in 1 line of HTML
+      - Unlimited images
+      - Free template gallery
+      - '**No image watermarks**'
+      - ~~Custom templates with HTML/CSS~~
+  - name: Pro
+    slug: pro
+    amount: 2999
+    rateLimit: null
+    features:
+      - Integrate in 1 line of HTML
+      - Unlimited images
+      - Free template gallery
+      - '**No image watermarks**'
+      - '**Custom templates** with HTML/CSS'
