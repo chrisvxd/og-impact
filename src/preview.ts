@@ -20,8 +20,6 @@ export default async function preview(
   template: string = 'basic',
   body?: string,
   styles?: string,
-  size?: 'facebook' | 'twitter',
-
   ...templateParamsArr: any[]
 ): Promise<HttpResponse> {
   browser = browser || (await puppeteer.launch({}));
@@ -30,7 +28,6 @@ export default async function preview(
 
   const options: any = {
     templateParams,
-    size,
     browser,
     preview: true
   };
