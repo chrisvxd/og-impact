@@ -8,13 +8,13 @@ import configureParams from './utils/configure-params';
 let browser;
 
 /**
- * Generate an image with an existing or custom template and save to S3.
+ * Preview an image wrapped in a Twitter-style chrome. Remaining params are passed to the handlebars template.
  *
- * @param body - Handlebars template to render in the body for a custom template.
- * @param styles - CSS to use for a custom template. Passed to the head.
+ * @param template - Either a [free](/docs#section/Quick-Start/Free-Templates) or [user template](/docs#section/Quick-Start/Create-your-own-image-template) ID
+ * @param body - Handlebars template to render in the body. If used, `template` will be ignored.
+ * @param styles - CSS to use for a custom template. Use with `body`.
  *
- * @return Object containing the template
- *
+ * @return Image as `image/png`
  */
 export default async function preview(
   template: string = 'basic',
