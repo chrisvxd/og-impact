@@ -14,7 +14,7 @@ let browser;
  * @param body - Handlebars template to render in the body. If used, `template` will be ignored.
  * @param styles - CSS to use for a custom template. Use with `body`.
  *
- * @return Image as `image/jpeg`
+ * @return Image as `image/png`
  */
 export default async function image(
   template: string = 'basic',
@@ -44,7 +44,7 @@ export default async function image(
 
   return {
     headers: {
-      'Content-Type': 'image/jpeg'
+      'Content-Type': 'image/png'
     },
     statusCode: 200,
     body

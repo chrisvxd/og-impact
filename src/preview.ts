@@ -56,7 +56,7 @@ export default async function preview(
 
   return {
     headers: {
-      'Content-Type': 'image/jpeg'
+      'Content-Type': 'image/png'
     },
     statusCode: 200,
     body: img
