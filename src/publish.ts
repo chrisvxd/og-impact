@@ -10,7 +10,6 @@ shortid.seed(7654987); // Random seed to make less predictable
  * @param styles - CSS to use for a custom template. Passed to the head.
  *
  * @return Object containing the template
- *
  */
 export default async function publish(
   body: string,
