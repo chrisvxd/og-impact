@@ -54,26 +54,6 @@ services:
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'
-  - src: src/generate.ts
-    GET: false
-    pricingPlanConfig:
-      free:
-        enabled: false
-      starter:
-        enabled: true
-      pro:
-        enabled: true
-    examples:
-      - name: Generate image from HTML and save to S3
-        input:
-          body: <div class="Main">Hello, {{name}}!</div>
-          styles: '.Main { color: blue; }'
-          name: George Michael
-      - name: Generate image from a template and save to S3
-        input:
-          template: basic
-          title: Hello, World!
-          imageUrl: https://images.unsplash.com/photo-1475359524104-d101d02a042b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2057&q=80
 saas:
   name: OG IMPACT
   heading: '**Dynamic, branded social images in a single line of HTML**' # Dynamic, branded social images,     one line of HTML.
@@ -109,8 +89,6 @@ saas:
       desc: Built on top of [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image), the Node.js library for generating social share images.
       icon: media/icons/oss.svg
 env:
-  S3_ACCESS_KEY_ID: '@s3-access-key-id'
-  S3_SECRET_ACCESS_KEY: '@s3-secret-access-key'
   FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
 pricingPlans:
   - name: Free
