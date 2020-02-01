@@ -4,7 +4,7 @@ import shortid from 'shortid';
 shortid.seed(7654987); // Random seed to make less predictable
 
 /**
- * Generate an image with an existing or custom template and save to S3.
+ * Publish a custom template
  *
  * @param body - Handlebars template to render in the body for a custom template.
  * @param styles - CSS to use for a custom template. Passed to the head.
