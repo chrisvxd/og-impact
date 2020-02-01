@@ -65,7 +65,7 @@ Neat, huh? Check out the [template gallery](#free-templates) to explore our beau
 
 > This is a [pro feature](https://og-impact.saasify.sh/pricing).
 
-Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://chrisvxd_og-impact.saasify.sh/docs#operation/registerPOST) to register custom templates if that's more your thing.
+Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://chrisvxd_og-impact.saasify.sh/docs#operation/publishPOST) to publish custom templates if that's more your thing.
 
 **IMPORTANT: Your template will be public, so it's important to watermark the template with your brand or URL**.
 

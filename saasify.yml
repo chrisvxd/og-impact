@@ -26,7 +26,7 @@ services:
           template: my-template
           name: George Michael
         output: social.jpg
-  - src: src/register.ts
+  - src: src/publish.ts
     GET: false
     pricingPlanConfig:
       free:
@@ -36,7 +36,7 @@ services:
       pro:
         enabled: true
     examples:
-      - name: Register a user template
+      - name: Publish a user template
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'

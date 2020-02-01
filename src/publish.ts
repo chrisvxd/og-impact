@@ -12,7 +12,7 @@ shortid.seed(7654987); // Random seed to make less predictable
  * @return Object containing the template
  *
  */
-export default async function register(
+export default async function publish(
   body: string,
   styles: string
 ): Promise<{
