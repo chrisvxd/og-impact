@@ -2,7 +2,7 @@ import { HttpResponse } from 'fts-core';
 import puppeteer from 'puppeteer-serverless';
 import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
-import getCustomTemplates from './utils/get-custom-templates';
+import { getCustomTemplates } from './utils/get-templates';
 import configureParams from './utils/configure-params';
 
 let browser;
@@ -38,15 +38,12 @@ export default async function preview(
   } else {
     options.template = template;
 
-    const { customTemplates, isPrebuiltTemplate } = await getCustomTemplates(
+    const { customTemplates, isFreeTemplate } = await getCustomTemplates(
       template
     );
 
     options.customTemplates = customTemplates;
-    options.templateParams = configureParams(
-      templateParams,
-      isPrebuiltTemplate
-    );
+    options.templateParams = configureParams(templateParams, isFreeTemplate);
   }
 
   const img = await renderSocialImage(options);

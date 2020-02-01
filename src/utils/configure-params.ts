@@ -1,10 +1,10 @@
-export default (templateParams, isPrebuiltTemplate) => {
+export default (templateParams, isFreeTemplate) => {
   const definedImage =
     templateParams.unsplashId ||
     templateParams.unsplashKeywords ||
     templateParams.imageUrl;
 
-  return isPrebuiltTemplate
+  return isFreeTemplate
     ? {
         unsplashId: definedImage ? null : 'OeC1wIsKNpk',
         ...templateParams,
