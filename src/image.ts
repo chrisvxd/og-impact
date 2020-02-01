@@ -8,10 +8,11 @@ import configureParams from './utils/configure-params';
 let browser;
 
 /**
- * Render a social share image from a template. All remaining params get passed to the handlebars template.
+ * Render an image from a template. Remaining params are passed to the handlebars template.
  *
- * @param template - Either a [free](/docs#section/Quick-Start/Free-Templates) or [user template](https://chrisvxd_og-impact_e8cd1a94.saasify.sh/docs#section/Quick-Start/Create-your-own-template) ID
- * @param size - Preset size for the image
+ * @param template - Either a [free](/docs#section/Quick-Start/Free-Templates) or [user template](/docs#section/Quick-Start/Create-your-own-image-template) ID
+ * @param body - Handlebars template to render in the body. If used, `template` will be ignored.
+ * @param styles - CSS to use for a custom template. Use with `body`.
  *
  * @return Image as `image/jpeg`
  */
