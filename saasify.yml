@@ -56,12 +56,12 @@ services:
           styles: '.Main { color: blue; }'
 saas:
   name: OG IMPACT
-  headerText: ''
+  headerName: ''
   heading: '**Dynamic, branded social images in a single line of HTML**' # Dynamic, branded social images,     one line of HTML.
   subheading: Render dynamic social share images whenever your pages get shared to Facebook, Twitter, Slack & more.
   repo: https://github.com/chrisvxd/puppeteer-social-image
   logo: './media/logo.png'
-  logoLight: './media/logoLight.png'
+  logoLight: './media/logo-light.png'
   favicon: './media/favicon.ico'
   theme:
     name: waves
