@@ -28,16 +28,34 @@ Create a meta tag, and add it to the `<head />` of the page in question.
 
 When the page is shared, Facebook will show the image at https://ssfy.sh/chrisvxd/og-impact/image?title=Hello%20World. For Twitter, add `<meta property="twitter:image" />`.
 
+Let's add our logo via the `logo` param, which accepts a URL:
+
+```html
+<meta
+  property="og:image"
+  content="https://ssfy.sh/chrisvxd/og-impact/image?
+    title=Hello%20World&
+    logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png
+  "
+/>
+```
+
+<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png" width=400 />
+
 We can also change the background via the `unsplashId` query param:
 
 ```html
 <meta
   property="og:image"
-  content="https://ssfy.sh/chrisvxd/og-impact/image?title=Hello%20World&unsplashId=phIFdC6lA4E"
+  content="https://ssfy.sh/chrisvxd/og-impact/image?
+    title=Hello%20World&
+    logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png&
+    unsplashId=phIFdC6lA4E
+  "
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?title=Hello%20World&unsplashId=phIFdC6lA4E&ghbust=2" width=400 />
+<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png&unsplashId=phIFdC6lA4E&ghbust=2" width=400 />
 
 This is using the default template, `basic`. You can see the [full documentation](#free-templates) for `basic` below. To remove the watermark, you'll need to upgrade.
 
@@ -93,6 +111,7 @@ Using your template:
 ##### Params
 
 - `title` _string_ - text to render
+- `logo` _string_ - URL for the logo
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
@@ -120,6 +139,7 @@ Using your template:
 - `title` _string_ - title text
 - `subtitle` _string_ - subtitle text
 - `eyebrow` _string_ - eyebrow text that renders above the title. Use for date
+- `logo` _string_ - URL for the logo
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
@@ -149,7 +169,7 @@ Using your template:
 
 - `title` _string_ - title text
 - `subtitle` _string_ - subtitle text
-- `eyebrow` _string_ - eyebrow text that renders above the title. Use for date
+- `logo` _string_ - URL for the logo
 - `unsplashId` _string_ - [Unsplash](https://unsplash.com/) image ID for the background
 - `unsplashKeywords` _string_ - keywords (comma-separated) for a random image from [Unsplash](https://unsplash.com/) for the background
 - `imageUrl` _string_ - URL for the background image
