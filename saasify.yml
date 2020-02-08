@@ -60,8 +60,8 @@ saas:
   sections:
     navHeader:
       displayName: false
-  heading: '**Instant social images for marketplaces & content-driven sites**'
-  subheading: Dynamically create social share images for each page on your site. Boost your social engagement by up to 250%.
+  heading: '**Instant social images, one line of HTML.**'
+  subheading: The API for instant social share images. Boost your social CTR by up to 250% every time your page gets shared.
   repo: https://github.com/chrisvxd/puppeteer-social-image
   logo: './media/logo.png'
   logoLight: './media/logo-light.png'
@@ -71,7 +71,7 @@ saas:
     name: waves
     gradientDark: true
     buttonStyle: rounded
-    headingFontSize: 45px
+    headingFontSize: 44px
   features:
     - name: Boost social engagement
       desc: Adding social share images can boost CTR of social links by [up to 250%](https://blogging.com/increase-blog-traffic/), as well as increasing social engagement.
