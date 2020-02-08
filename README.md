@@ -99,7 +99,7 @@ You'll receive a new template ID that you can now reference:
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?template=mrIaqKh9050&title=Hello%20World&unsplashId=phIFdC6lA4E&ghbust=1" width=400 />
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?template=noENcV4t&title=Hello%20World&unsplashId=phIFdC6lA4E&ghbust=1" width=400 />
 
 ### Create your own image template
 
