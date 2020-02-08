@@ -57,20 +57,21 @@ services:
 saas:
   name: OG IMPACT
   headerName: ''
-  heading: '**Dynamic, branded social images in a single line of HTML**' # Dynamic, branded social images,     one line of HTML.
-  subheading: Render dynamic social share images whenever your pages get shared to Facebook, Twitter, Slack & more.
+  sections:
+    navHeader:
+      displayName: false
+  heading: '**Instant social images for marketplaces & content-driven sites**'
+  subheading: Dynamically create social share images for each page on your site. Boost your social engagement by up to 250%.
   repo: https://github.com/chrisvxd/puppeteer-social-image
   logo: './media/logo.png'
   logoLight: './media/logo-light.png'
   favicon: './media/favicon.ico'
+  exampleImage: 'https://i.imgur.com/ZrosGSl.png'
   theme:
     name: waves
-    backgroundImage: https://images.unsplash.com/photo-1523251451807-aaf1c84d0591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
-    wave: false
-    codeBlockDark: true
-    codeBlockOutputFlush: true
     gradientDark: true
     buttonStyle: rounded
+    headingFontSize: 45px
   features:
     - name: Boost social engagement
       desc: Adding social share images can boost CTR of social links by [up to 250%](https://blogging.com/increase-blog-traffic/), as well as increasing social engagement.
