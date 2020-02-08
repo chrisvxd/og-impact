@@ -25,34 +25,27 @@ Create a meta tag, and add it to the `<head />` of each page:
 
 When the page is shared, Facebook will show the image at https://ogi.sh?title=Hello%20World. For Twitter, add `<meta property="twitter:image" />`.
 
-Add your logo via the `logo` param:
-
-```html
-<meta
-  property="og:image"
-  content="https://ogi.sh?
-    title=Hello%20World&
-    logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png
-  "
-/>
-```
-
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png" width=400 />
-
 Try changing the background via the `unsplashId` param:
 
 ```html
 <meta
   property="og:image"
-  content="https://ogi.sh?
-    title=Hello%20World&
-    logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png&
-    unsplashId=phIFdC6lA4E
-  "
+  content="https://ogi.sh?title=Hello%20World&unsplashId=phIFdC6lA4E"
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png&unsplashId=phIFdC6lA4E&ghbust=2" width=400 />
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&unsplashId=phIFdC6lA4E&ghbust=2" width=400 />
+
+Add your logo via the `logo` param:
+
+```html
+<meta
+  property="og:image"
+  content="https://ogi.sh?title=Hello%20World&unsplashId=phIFdC6lA4E&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png"
+/>
+```
+
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&unsplashId=phIFdC6lA4E&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png" width=400 />
 
 This is using the default template, `basic`. You can see the [full documentation](#free-templates) for `basic` below. Want to remove the watermark? See the [instructions below](#remove-the-watermark).
 
