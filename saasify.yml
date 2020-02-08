@@ -54,6 +54,20 @@ services:
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'
+  - src: src/unwatermark.ts
+    pricingPlanConfig:
+      free:
+        enabled: false
+      starter:
+        enabled: true
+      pro:
+        enabled: true
+    examples:
+      - name: Remove the watermark from a free template
+        input:
+          template: basic
+          domain: www.example.com
+          logo: www.example.com/logo.png
 saas:
   name: OG IMPACT
   headerName: ''

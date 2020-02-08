@@ -24,17 +24,20 @@ export default async function image(
 
   const templateParams = reducePairs(templateParamsArr);
 
-  const { customTemplates, isFreeTemplate } = await getCustomTemplates(
-    template
-  );
+  const {
+    customTemplates,
+    isFreeTemplate,
+    resolvedTemplate,
+    extendedParams
+  } = await getCustomTemplates(template);
 
   const templateParamsWithConfig = configureParams(
-    templateParams,
+    { ...templateParams, ...extendedParams },
     isFreeTemplate
   );
 
   const body = await renderSocialImage({
-    template,
+    template: resolvedTemplate,
     templateParams: templateParamsWithConfig,
     customTemplates,
     size,

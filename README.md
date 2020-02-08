@@ -79,6 +79,37 @@ Let's try another template called `article`, designed for (but not limited to) s
 
 Neat, huh? Check out the [template gallery](#free-templates) to explore our beautiful, free templates covering various use cases.
 
+### Removing the watermark
+
+You can remove the watermark from any free template by [upgrading](https://og-impact.saasify.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://chrisvxd_og-impact.saasify.sh/docs#operation/unwatermarkPOST).
+
+For example, to remove the watermark the free template:
+
+```sh
+curl -X POST \
+  'https://ogi.sh/unwatermark' \
+  -H 'content-type: application/json' \
+  -d '{
+  "template": "basic",
+  "domain": "www.example.com",
+  "logo": "www.example.com/logo.png"
+}'
+```
+
+You'll receive a new template ID that you can now reference:
+
+```html
+<meta
+  property="og:image"
+  content="https://ssfy.sh/chrisvxd/og-impact/image?
+    template=noENcV4t
+    title=Hello%20World&
+    unsplashId=mrIaqKh9050"
+/>
+```
+
+<img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?template=mrIaqKh9050&title=Hello%20World&unsplashId=phIFdC6lA4E&ghbust=1" width=400 />
+
 ### Create your own image template
 
 > This is a [pro feature](https://og-impact.saasify.sh/pricing).

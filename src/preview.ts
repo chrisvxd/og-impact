@@ -36,14 +36,20 @@ export default async function preview(
     options.templateBody = body;
     options.templateStyles = styles;
   } else {
-    options.template = template;
+    const {
+      customTemplates,
+      isFreeTemplate,
+      resolvedTemplate,
+      extendedParams
+    } = await getCustomTemplates(template);
 
-    const { customTemplates, isFreeTemplate } = await getCustomTemplates(
-      template
-    );
+    options.template = resolvedTemplate;
 
     options.customTemplates = customTemplates;
-    options.templateParams = configureParams(templateParams, isFreeTemplate);
+    options.templateParams = configureParams(
+      { ...templateParams, ...extendedParams },
+      isFreeTemplate
+    );
   }
 
   const img = await renderSocialImage(options);
