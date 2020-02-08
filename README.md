@@ -3,7 +3,7 @@
 </p>
 <h1 align="center"> <a href="https://chrisvxd_og-impact.saasify.sh">ogimpact.sh</a></h1>
 
-<p align="center">Dynamic social share images for Facebook, Twitter, Slack etc in a single line of HTML</p>
+<p align="center">Instant social images, one line of HTML. Hosted version of <a href="https://github.com/chrisvxd/puppeteer-social-image">puppeteer-social-image</a>.</p>
 
 ```html
 <meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
@@ -15,7 +15,7 @@
 
 ### Create your first image
 
-Create a meta tag, and add it to the `<head />` of the page in question.
+Create a meta tag, and add it to the `<head />` of each page:
 
 ```html
 <meta
@@ -28,7 +28,7 @@ Create a meta tag, and add it to the `<head />` of the page in question.
 
 When the page is shared, Facebook will show the image at https://ssfy.sh/chrisvxd/og-impact/image?title=Hello%20World. For Twitter, add `<meta property="twitter:image" />`.
 
-Let's add our logo via the `logo` param, which accepts a URL:
+Add your logo via the `logo` param:
 
 ```html
 <meta
@@ -42,7 +42,7 @@ Let's add our logo via the `logo` param, which accepts a URL:
 
 <img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png" width=400 />
 
-We can also change the background via the `unsplashId` query param:
+Try changing the background via the `unsplashId` param:
 
 ```html
 <meta
@@ -57,11 +57,11 @@ We can also change the background via the `unsplashId` query param:
 
 <img style="margin-bottom: 16px;" src="https://ssfy.sh/chrisvxd/og-impact/preview?title=Hello%20World&logo=https%3A%2F%2Fi.imgur.com%2FyKp8kEI.png&unsplashId=phIFdC6lA4E&ghbust=2" width=400 />
 
-This is using the default template, `basic`. You can see the [full documentation](#free-templates) for `basic` below. To remove the watermark, you'll need to upgrade.
+This is using the default template, `basic`. You can see the [full documentation](#free-templates) for `basic` below. Want to remove the watermark? See the [instructions below](#remove-the-watermark).
 
 ### Trying another template
 
-Let's try another template called `article`, designed for (but not limited to) sharing articles. The query params are URL encoded, and broken onto new lines so you can see what's going on.
+Let's try another template called `article` by setting the `template` param. The query params are broken onto new lines so you can see what's going on.
 
 ```html
 <meta
