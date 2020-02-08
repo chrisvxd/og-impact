@@ -83,7 +83,7 @@ Neat, huh? Check out the [template gallery](#free-templates) to explore our beau
 
 You can remove the watermark from any free template by [upgrading](https://og-impact.saasify.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://chrisvxd_og-impact.saasify.sh/docs#operation/unwatermarkPOST).
 
-For example, to remove the watermark the free template:
+For example, to remove the watermark from the `basic` template:
 
 ```sh
 curl -X POST \
