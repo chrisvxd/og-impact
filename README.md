@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://i.imgur.com/k5oSTYu.png" width=700 />
 </p>
-<h1 align="center"> <a href="https://chrisvxd_og-impact.saasify.sh">ogimpact.sh</a></h1>
+<h1 align="center"> <a href="https://ogimpact.sh">ogimpact.sh</a></h1>
 
 <p align="center">Instant social images, one line of HTML. Hosted version of <a href="https://github.com/chrisvxd/puppeteer-social-image">puppeteer-social-image</a>.</p>
 
@@ -9,7 +9,7 @@
 <meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
 ```
 
-<p align="center"><a href="#free-templates">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpacteditor.netlify.com">Template Editor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://chrisvxd_og-impact.saasify.sh/pricing">Pricing</a></p>
+<p align="center"><a href="#free-templates">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpacteditor.netlify.com">Template Editor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://ogimpact.sh/pricing">Pricing</a></p>
 
 ## Quick Start
 
@@ -71,7 +71,7 @@ Neat, huh? Check out the [template gallery](#free-templates) to explore our beau
 
 ### Removing the watermark
 
-You can remove the watermark from any free template by [upgrading](https://og-impact.saasify.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://chrisvxd_og-impact.saasify.sh/docs#operation/unwatermarkPOST).
+You can remove the watermark from any free template by [upgrading](https://og-impact.saasify.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://ogimpact.sh/docs#operation/unwatermarkPOST).
 
 For example, to remove the watermark from the `basic` template:
 
@@ -105,7 +105,7 @@ You'll receive a new template ID that you can now reference:
 
 > This is a [pro feature](https://og-impact.saasify.sh/pricing).
 
-Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://chrisvxd_og-impact.saasify.sh/docs#operation/publishPOST) to publish custom templates if that's more your thing.
+Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://ogimpact.sh/docs#operation/publishPOST) to publish custom templates if that's more your thing.
 
 **IMPORTANT: Your template will be public, so it's important to watermark the template with your brand or URL**.
 
