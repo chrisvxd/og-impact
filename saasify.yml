@@ -1,4 +1,5 @@
 name: og-impact
+alias: ogimpact.sh
 services:
   - src: src/image.ts
     immutable: true
