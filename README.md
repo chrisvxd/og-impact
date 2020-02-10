@@ -172,7 +172,7 @@ Using your template:
 ```html
 <meta
   property="og:image"
-  content="https://ogi.sh/preview?
+  content="https://ogi.sh?
            template=article&
            eyebrow=27%20AUGUST&
            title=INTO%20THE%20OCEAN&
