@@ -23,7 +23,7 @@ Create a meta tag, and add it to the `<head />` of each page:
 
 <img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&ghbust=2" width=400 />
 
-When the page is shared, Facebook will show the image at https://ogi.sh?title=Hello%20World. For Twitter, add `<meta property="twitter:image" />`.
+When the page is shared, Facebook will show the image at https://ogi.sh?title=Hello%20World. For Twitter, see our [recommended meta tags](#recommended-meta-tags).
 
 Try changing the background via the `unsplashId` param:
 
@@ -199,9 +199,38 @@ Using your template:
 />
 ```
 
-#### Additional templates
+### Recommended Meta Tags
 
-More templates will be added in the near future.
+Here's a full list of the social tags we recommend using on your webpage. These will be picked up by social platforms whenever your webpage is shared in order to enhance the preview.
+
+Place these inside the `<head>` of your webpage, and make sure they're rendered server-side.
+
+#### Open Graph Meta Tags
+
+Used by Facebook and many other platforms.
+
+```html
+<meta property="og:image" content="https://ogi.sh?Hello%20World" />
+<meta property="og:site_name" content="EuroTravel" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="European Travel Destinations" />
+<meta property="og:description" content="Offering tour packages for groups." />
+```
+
+#### Twitter Meta Tags
+
+Used by Twitter.
+
+```html
+<meta name="twitter:image" content="https://ogi.sh?Hello%20World" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="My Website" />
+<meta name="twitter:description" content="Offering tour packages for groups." />
+```
+
+> Note that Twitter uses `name` instead of `property`.
+
+See [this article](https://css-tricks.com/essential-meta-tags-social-media/) for a much more in-depth explanation of meta tags.
 
 ## License
 
