@@ -70,7 +70,7 @@ Neat, huh? Check out the [template gallery](#free-templates) to explore our beau
 
 ### Removing the watermark
 
-You can remove the watermark from any free template by [upgrading](https://og-impact.saasify.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://ogimpact.sh/docs#operation/unwatermarkPOST).
+You can remove the watermark from any free template by [upgrading](https://ogimpact.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://ogimpact.sh/docs#operation/unwatermarkPOST).
 
 For example, to remove the watermark from the `basic` template:
 
@@ -99,7 +99,7 @@ You'll receive a new template ID that you can now reference:
 
 ### Create your own image template
 
-> This is a [pro feature](https://og-impact.saasify.sh/pricing).
+> This is a [pro feature](https://ogimpact.sh/pricing).
 
 Creating your own, branded template can be done via [the Editor](http://ogimpacteditor.netlify.com). It's as simple as HTML and CSS, with [handlebars](https://handlebarsjs.com/guide/#what-is-handlebars) for templating. We also provide [an API](https://ogimpact.sh/docs#operation/publishPOST) to publish custom templates if that's more your thing.
 
