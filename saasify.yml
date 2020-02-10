@@ -87,6 +87,11 @@ saas:
     gradientDark: true
     buttonStyle: rounded
     headingFontSize: 44px
+    color: '#792be6'
+  socialShare:
+    displayLogoName: false
+    backgroundImage: https://images.unsplash.com/photo-1523251451807-aaf1c84d0591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80
+    imageTitle: '**Generate social images, like this one.**'
   features:
     - name: Boost social engagement
       desc: Adding social share images can boost CTR of social links by [up to 250%](https://blogging.com/increase-blog-traffic/), as well as increasing social engagement.
