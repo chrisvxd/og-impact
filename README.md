@@ -224,7 +224,7 @@ Used by Twitter.
 ```html
 <meta name="twitter:image" content="https://ogi.sh?Hello%20World" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="My Website" />
+<meta name="twitter:title" content="European Travel Destinations" />
 <meta name="twitter:description" content="Offering tour packages for groups." />
 ```
 
