@@ -1,3 +1,4 @@
+import { HttpContext } from 'fts-core';
 import { db } from './config';
 import shortid from 'shortid';
 
@@ -13,11 +14,16 @@ shortid.seed(7654987); // Random seed to make less predictable
  */
 export default async function publish(
   body: string,
-  styles: string
+  styles: string,
+  context: HttpContext
 ): Promise<{
   template: string;
 }> {
   const collectionRef = db.collection('templates');
+  const user = context.headers['x-saasify-user'];
+  const plan = context.headers['x-saasify-plan'];
+
+  console.log('publish', { user, plan });
 
   let result;
   let id;
