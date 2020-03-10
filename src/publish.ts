@@ -1,4 +1,4 @@
-import { HttpContext } from 'fts-core';
+import { HttpContext } from 'fts-http';
 import { db } from './config';
 import shortid from 'shortid';
 
