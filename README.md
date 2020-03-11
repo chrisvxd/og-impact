@@ -68,35 +68,6 @@ Let's try another template called `article` by pointing to `/article`. The query
 
 Neat, huh? Check out the [template gallery](#free-templates) to explore our beautiful, free templates covering various use cases.
 
-### Removing the watermark
-
-You can remove the watermark from any free template by [upgrading](https://ogimpact.sh/pricing). Once you've upgraded, you can make use of the [`unwatermark` API](https://ogimpact.sh/docs#operation/unwatermarkPOST).
-
-For example, to remove the watermark from the `basic` template:
-
-```sh
-curl -X POST \
-  'https://ogi.sh/unwatermark' \
-  -H 'content-type: application/json' \
-  -H 'authorization: YOUR_API_KEY' \
-  -d '{
-  "template": "basic",
-  "domain": "www.example.com",
-  "logo": "www.example.com/logo.png"
-}'
-```
-
-You'll receive a new template ID that you can now reference:
-
-```html
-<meta
-  property="og:image"
-  content="https://ogi.sh/noENcV4t?title=Hello%20World"
-/>
-```
-
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview/noENcV4t?title=Hello%20World&ghbust=1" width=400 />
-
 ### Create your own image template
 
 > This is a [pro feature](https://ogimpact.sh/pricing).
