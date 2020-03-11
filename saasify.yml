@@ -33,7 +33,7 @@ services:
       free:
         enabled: false
       pro:
-        enabled: false
+        enabled: true
       business:
         enabled: true
     examples:
