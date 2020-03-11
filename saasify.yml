@@ -7,9 +7,9 @@ services:
     pricingPlanConfig:
       free:
         enabled: true
-      starter:
-        enabled: true
       pro:
+        enabled: true
+      business:
         enabled: true
     examples:
       - name: Request image from basic template (free)
@@ -32,9 +32,9 @@ services:
     pricingPlanConfig:
       free:
         enabled: false
-      starter:
-        enabled: false
       pro:
+        enabled: false
+      business:
         enabled: true
     examples:
       - name: Publish a user template
@@ -46,9 +46,9 @@ services:
     pricingPlanConfig:
       free:
         enabled: true
-      starter:
-        enabled: true
       pro:
+        enabled: true
+      business:
         enabled: true
     examples:
       - name: Preview a user template
@@ -59,9 +59,9 @@ services:
     pricingPlanConfig:
       free:
         enabled: false
-      starter:
-        enabled: true
       pro:
+        enabled: true
+      business:
         enabled: true
     examples:
       - name: Remove the watermark from a free template
@@ -119,28 +119,23 @@ pricingPlans:
     amount: 0
     rateLimit: null
     features:
-      - Integrate in 1 line of HTML
-      - Unlimited images
-      - Free template gallery
-      - Images watermarked
-      - ~~Custom templates with HTML/CSS~~
-  - name: Starter
-    slug: starter
-    amount: 999
-    rateLimit: null
-    features:
-      - Integrate in 1 line of HTML
-      - Unlimited images
-      - Free template gallery
-      - '**No image watermarks**'
-      - ~~Custom templates with HTML/CSS~~
+      - Open Graph & Twitter images
+      - Unlimited image requests
+      - Free template gallery, watermarked
   - name: Pro
     slug: pro
-    amount: 2999
+    amount: 1999
     rateLimit: null
     features:
-      - Integrate in 1 line of HTML
-      - Unlimited images
-      - Free template gallery
+      - Open Graph & Twitter images
+      - Unlimited image requests
+      - '**Custom templates with HTMl/CSS**'
       - '**No image watermarks**'
-      - '**Custom templates** with HTML/CSS'
+  - name: Business
+    slug: business
+    amount: 9999
+    rateLimit: null
+    features:
+      - 'All features in Pro Tier, plus:'
+      - '**We design & develop your image**'
+      - '**Priority support**'
