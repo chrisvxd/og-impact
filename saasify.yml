@@ -3,7 +3,7 @@ alias: ogimpact.sh
 services:
   - src: src/image.ts
     immutable: true
-    POST: false
+    httpMethod: 'GET'
     pricingPlanConfig:
       free:
         enabled: true
@@ -28,7 +28,7 @@ services:
           name: George Michael
         output: social.jpg
   - src: src/publish.ts
-    GET: false
+    httpMethod: 'POST'
     pricingPlanConfig:
       free:
         enabled: false
@@ -43,6 +43,7 @@ services:
           styles: '.Main { color: blue; }'
   - src: src/preview.ts
     immutable: true
+    httpMethod: 'GET'
     pricingPlanConfig:
       free:
         enabled: true
