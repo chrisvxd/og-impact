@@ -23,8 +23,6 @@ export default async function publish(
   const user = context.headers['x-saasify-user'];
   const plan = context.headers['x-saasify-plan'];
 
-  console.log('publish', { user, plan });
-
   let result;
   let id;
 
@@ -33,7 +31,9 @@ export default async function publish(
     try {
       result = await collectionRef.doc(id).set({
         body,
-        styles
+        styles,
+        user,
+        plan
       });
 
       console.log(`Created template with id ${id}`);
