@@ -107,7 +107,7 @@ pricingPlans:
     features:
       - Open Graph & Twitter images
       - Unlimited image requests
-      - Free template gallery, watermarked
+      - '[Free template gallery](/docs#section/Quick-Start/Free-Templates), watermarked'
   - name: Pro
     slug: pro
     amount: 1999
