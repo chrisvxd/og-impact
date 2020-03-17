@@ -116,7 +116,7 @@ pricingPlans:
     features:
       - Open Graph & Twitter images
       - Unlimited image requests
-      - '**Custom templates with HTMl/CSS**'
+      - '**Custom templates with HTML/CSS**'
       - '**No image watermarks**'
   - name: Business
     slug: business
