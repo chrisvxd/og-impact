@@ -98,6 +98,8 @@ saas:
     - name: Built on open source
       desc: Built on top of [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image), the Node.js library for generating social share images.
       icon: media/icons/oss.svg
+  scripts:
+    - media/js/heap.js
 env:
   FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
 pricingPlans:
