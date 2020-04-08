@@ -111,6 +111,7 @@ saas:
       icon: media/icons/speed.svg
   scripts:
     - media/js/heap.js
+    - media/js/tawk.js
 env:
   FIREBASE_SERVICE_ACCOUNT: '@firebase-service-account'
 pricingPlans:
