@@ -60,44 +60,55 @@ saas:
   name: OG IMPACT
   headerName: ''
   sections:
+    hero:
+      ctaLink: /docs
+      cta: Use API for free
     navHeader:
       displayName: false
-  heading: '**Instant social images, one line of HTML.**'
-  subheading: The API for instant social share images. Boost your social CTR by up to 250% every time your page gets shared.
-  repo: https://github.com/chrisvxd/puppeteer-social-image
+      cta: Sign up
+      support: false
+    navFooter:
+      slack: false
+      email: false
+      cta: 'Sign up'
+    cta:
+      ctaLink: /docs
+  heading: '**The open source API for generating social images.**'
+  subheading: Run a platform powered by dynamic content? Generate unlimited social images for free with our open source API. **No signup necessary.**
+  repo: https://github.com/chrisvxd/og-impact
   logo: './media/logo.png'
   logoLight: './media/logo-light.png'
   favicon: './media/favicon.ico'
-  exampleImage: 'https://i.imgur.com/ZrosGSl.png'
+  exampleImage: 'https://i.imgur.com/QcxAHFw.png'
   theme:
     name: waves
     gradientDark: true
     buttonStyle: rounded
-    headingFontSize: 44px
+    headingFontSize: 42px
     color: '#792be6'
   socialShare:
     displayLogoName: false
     backgroundImage: https://images.unsplash.com/photo-1523251451807-aaf1c84d0591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80
     imageTitle: '**Generate social images, like this one.**'
   features:
-    - name: Boost social engagement
-      desc: Adding social share images can boost CTR of social links by [up to 250%](https://blogging.com/increase-blog-traffic/), as well as increasing social engagement.
+    - name: Boost your CTR by 2.5x
+      desc: Adding Open Graph can boost CTR of social shares by [up to 2.5x](https://thenextweb.com/socialmedia/2012/05/17/since-tumblr-integrated-with-open-graph-last-month-traffic-from-facebook-is-up-2-5x/), and increase social engagement.
       icon: media/icons/share.svg
-    - name: Dynamic, branded images
-      desc: Create a branded template using HTML and CSS, and we'll dynamically render images for each page.
+    - name: Free for everyone
+      desc: Start generating images using the public API without even creating an account. [Check out the docs](/docs) to get started now.
+      icon: media/icons/gallery.svg
+    - name: Open source API
+      desc: We ❤️ open source. The entire codebase is available [on GitHub](https://github.com/chrisvxd/og-impact). We welcome bug reports, feature requests and PRs!
+      icon: media/icons/oss.svg
+    - name: Template editor
+      desc: Want to create a custom template? Our Codepen-style [template editor](http://ogimpacteditor.netlify.com/) makes it easy to develop your own image templates. [Upgrade to access](/pricing).
       icon: media/icons/brand.svg
     - name: Built for devs
-      desc: Generating a dynamic image is as simple as placing a `<meta />` tag in your HTML.
+      desc: No JS snippets, backend integration or image hosting necessary. Just drop a `<meta />` tag in your HTML that calls our public API.
       icon: media/icons/dev.svg
-    - name: Use a free template
-      desc: Don't need a branded template? Explore our collection of beautiful, free templates that cover many use cases.
-      icon: media/icons/gallery.svg
-    - name: Blazingly fast
-      desc: Images are cached after the first generation, so our servers won't even sweat it if you go viral.
+    - name: Blazingly fast, infinite scale
+      desc: Generated images are cached using a serverless caching system, so we won't sweat it if you go viral.
       icon: media/icons/speed.svg
-    - name: Built on open source
-      desc: Built on top of [puppeteer-social-image](https://github.com/chrisvxd/puppeteer-social-image), the Node.js library for generating social share images.
-      icon: media/icons/oss.svg
   scripts:
     - media/js/heap.js
 env:
