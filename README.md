@@ -181,7 +181,7 @@ Place these inside the `<head>` of your webpage, and make sure they're rendered 
 Used by Facebook and many other platforms.
 
 ```html
-<meta property="og:image" content="https://ogi.sh?Hello%20World" />
+<meta property="og:image" content="https://ogi.sh?title=Hello%20World" />
 <meta property="og:site_name" content="EuroTravel" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="European Travel Destinations" />
@@ -193,7 +193,7 @@ Used by Facebook and many other platforms.
 Used by Twitter.
 
 ```html
-<meta name="twitter:image" content="https://ogi.sh?Hello%20World" />
+<meta name="twitter:image" content="https://ogi.sh?title=Hello%20World" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="European Travel Destinations" />
 <meta name="twitter:description" content="Offering tour packages for groups." />
