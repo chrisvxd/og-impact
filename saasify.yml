@@ -56,6 +56,7 @@ services:
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'
+
 saas:
   name: OG IMPACT
   headerName: ''

@@ -170,13 +170,15 @@ Using your template:
 />
 ```
 
-### Recommended Meta Tags
+### Integrations
+
+#### Recommended Meta Tags
 
 Here's a full list of the social tags we recommend using on your webpage. These will be picked up by social platforms whenever your webpage is shared in order to enhance the preview.
 
 Place these inside the `<head>` of your webpage, and make sure they're rendered server-side.
 
-#### Open Graph Meta Tags
+##### Open Graph
 
 Used by Facebook and many other platforms.
 
@@ -188,7 +190,7 @@ Used by Facebook and many other platforms.
 <meta property="og:description" content="Offering tour packages for groups." />
 ```
 
-#### Twitter Meta Tags
+##### Twitter
 
 Used by Twitter.
 
@@ -202,6 +204,31 @@ Used by Twitter.
 > Note that Twitter uses `name` instead of `property`.
 
 See [this article](https://css-tricks.com/essential-meta-tags-social-media/) for a much more in-depth explanation of meta tags.
+
+#### Instagram
+
+Call the API directly and specify the `size` parameter with value as one of:
+
+- `ig-landscape`
+- `ig-portrait`
+- `ig-square`
+- `ig-story`
+
+```
+https://ogi.sh/preview?title=Hello%20World&size=ig-square
+```
+
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&size=ig-square" width=400 />
+
+#### Pinterest
+
+Call the API directly and specify the `size` parameter with value `pinterest`.
+
+```
+https://ogi.sh/preview?title=Hello%20World&size=pinterest
+```
+
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?title=Hello%20World&size=pinterest" width=400 />
 
 ## License
 

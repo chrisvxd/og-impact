@@ -13,6 +13,7 @@ let browser;
  * @param template - Either a [free](/docs#section/Quick-Start/Free-Templates) or [user template](/docs#section/Quick-Start/Create-your-own-image-template) ID
  * @param body - Handlebars template to render in the body. If used, `template` will be ignored.
  * @param styles - CSS to use for a custom template. Use with `body`.
+ * @param size - Size of the image to render. Can be `facebook`, `twitter`, `ig-landscape`, `ig-square`, `ig-portrait`, `ig-story`, `pinterest` or any `WIDTHxHEIGHT` value in pixels.
  *
  * @return Image as `image/png`
  */
@@ -20,6 +21,7 @@ export default async function preview(
   template: string = 'basic',
   body?: string,
   styles?: string,
+  size?: string,
   ...templateParamsArr: any[]
 ): Promise<HttpResponse> {
   browser = browser || (await puppeteer.launch({}));
@@ -29,7 +31,8 @@ export default async function preview(
   const options: any = {
     templateParams,
     browser,
-    preview: true
+    preview: true,
+    size,
   };
 
   if (body) {
