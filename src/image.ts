@@ -28,7 +28,7 @@ export default async function image(
     customTemplates,
     isFreeTemplate,
     resolvedTemplate,
-    extendedParams
+    extendedParams,
   } = await getCustomTemplates(template);
 
   const templateParamsWithConfig = configureParams(
@@ -41,14 +41,14 @@ export default async function image(
     templateParams: templateParamsWithConfig,
     customTemplates,
     size,
-    browser
+    browser,
   });
 
   return {
     headers: {
-      'Content-Type': 'image/png'
+      'Content-Type': 'image/png',
     },
     statusCode: 200,
-    body
+    body,
   };
 }

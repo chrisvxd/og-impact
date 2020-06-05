@@ -43,7 +43,7 @@ export default async function preview(
       customTemplates,
       isFreeTemplate,
       resolvedTemplate,
-      extendedParams
+      extendedParams,
     } = await getCustomTemplates(template);
 
     options.template = resolvedTemplate;
@@ -59,9 +59,9 @@ export default async function preview(
 
   return {
     headers: {
-      'Content-Type': 'image/png'
+      'Content-Type': 'image/png',
     },
     statusCode: 200,
-    body: img
+    body: img,
   };
 }

@@ -33,7 +33,7 @@ export default async function publish(
         body,
         styles,
         user,
-        plan
+        plan,
       });
 
       console.log(`Created template with id ${id}`);
@@ -43,6 +43,6 @@ export default async function publish(
   }
 
   return {
-    template: id
+    template: id,
   };
 }
