@@ -42,11 +42,13 @@ export default async function image(
     customTemplates,
     size,
     browser,
+    type: 'jpeg',
+    jpegQuality: 80,
   });
 
   return {
     headers: {
-      'Content-Type': 'image/png',
+      'Content-Type': 'image/jpeg',
     },
     statusCode: 200,
     body,

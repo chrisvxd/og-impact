@@ -33,6 +33,8 @@ export default async function preview(
     browser,
     preview: true,
     size,
+    type: 'jpeg',
+    jpegQuality: 70,
   };
 
   if (body) {
@@ -59,7 +61,7 @@ export default async function preview(
 
   return {
     headers: {
-      'Content-Type': 'image/png',
+      'Content-Type': 'image/jpeg',
     },
     statusCode: 200,
     body: img,
