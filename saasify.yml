@@ -56,6 +56,20 @@ services:
         input:
           body: <div class="Main">Hello, {{name}}!</div>
           styles: '.Main { color: blue; }'
+  - src: src/url.ts
+    immutable: true
+    httpMethod: 'GET'
+    pricingPlanConfig:
+      free:
+        enabled: true
+      pro:
+        enabled: true
+      business:
+        enabled: true
+    examples:
+      - name: Retrieve a shareable URL
+        input:
+          id: abcd123
 
 saas:
   name: OG IMPACT
