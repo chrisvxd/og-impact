@@ -64,7 +64,7 @@ Let's try another template called `article` by pointing to `/article`. The query
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?template=article&eyebrow=27%20AUGUST&title=INTO%20THE%20OCEAN&subtitle=Explore%20the%20depths%20of%20the%20deep%20blue%20sea&unsplashId=gGX1fJkmw3k&ghbust=2" width=400 />
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview/article?eyebrow=27%20AUGUST&title=INTO%20THE%20OCEAN&subtitle=Explore%20the%20depths%20of%20the%20deep%20blue%20sea&unsplashId=gGX1fJkmw3k&ghbust=2" width=400 />
 
 Neat, huh? Check out the [template gallery](#free-templates) to explore our beautiful, free templates covering various use cases.
 
@@ -81,13 +81,11 @@ Using your template:
 ```html
 <meta
   property="og:image"
-  content="https://ogi.sh?
-    template=infGC5AQ&
-    title=MIND%20BLOWN"
+  content="https://ogi.sh/infGC5AQ&title=MIND%20BLOWN"
 />
 ```
 
-<img style="margin-bottom: 16px;" src="https://ogi.sh/preview?template=infGC5AQ&title=MIND%20BLOWN&ghbust=2" width=400 />
+<img style="margin-bottom: 16px;" src="https://ogi.sh/preview/infGC5AQ?title=MIND%20BLOWN&ghbust=2" width=400 />
 
 ### Free Templates
 
