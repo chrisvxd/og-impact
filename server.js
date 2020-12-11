@@ -18,16 +18,16 @@ const createEndpoint = async (path, type = 'get') => {
 };
 
 async function createServer() {
+  app.listen(port, () => {
+    console.log(`OG IMPACT server listening at http://localhost:${port}`);
+  });
+
   console.log('Registering endpoints...');
 
   await createEndpoint('image');
   await createEndpoint('preview');
   await createEndpoint('publish', 'post');
   await createEndpoint('url');
-
-  app.listen(port, () => {
-    console.log(`OG IMPACT server listening at http://localhost:${port}`);
-  });
 }
 
 createServer().catch((err) => {
