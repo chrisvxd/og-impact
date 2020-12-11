@@ -1,5 +1,5 @@
 import { HttpResponse } from 'fts-core';
-import puppeteer from 'puppeteer-serverless';
+import puppeteer from 'puppeteer';
 import renderSocialImage from 'puppeteer-social-image';
 import reducePairs from './utils/reduce-pairs';
 import { getCustomTemplates } from './utils/get-templates';
