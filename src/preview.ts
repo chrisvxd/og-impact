@@ -24,7 +24,7 @@ export default async function preview(
   size?: string,
   ...templateParamsArr: any[]
 ): Promise<HttpResponse> {
-  browser = browser || (await puppeteer.launch({}));
+  browser = browser || (await puppeteer.launch({ args: ['--no-sandbox'] }));
 
   const templateParams = reducePairs(templateParamsArr);
 
