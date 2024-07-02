@@ -1,3 +1,7 @@
+**⚠️ This project has shut down. You can still self-host via [puppeteer-social-image](http://github.com/chrisvxd/puppeteer-social-image).**
+
+---
+
 <p align="center">
 <img src="https://i.imgur.com/k5oSTYu.png" width=700 />
 </p>
